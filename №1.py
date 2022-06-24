@@ -12,3 +12,8 @@ def domain_name(url):
 
 for i in my_string:
     print(i,' = ',domain_name(i))
+
+assert domain_name("http://google.com") == "google"
+assert domain_name("http://google.co.jp") == "google"
+assert domain_name("www.xakep.ru") == "xakep"
+assert domain_name("https://youtube.com") == "youtube"
